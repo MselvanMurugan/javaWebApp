@@ -14,9 +14,6 @@ RUN ["mvn", "verify"]
 ADD src /src  
 RUN ["mvn", "package"]
 
-EXPOSE 8081  
-RUN apt-get install -y tomcat7
-ADD /target/factoring.war  /usr/local/tomcat/webapps/
 
 
 

@@ -12,6 +12,8 @@ RUN ["mvn", "verify"]
 
 # Adding source, compile and package into a fat jar
 ADD src /src  
+
+
 RUN ["mvn", "package"]
 
 
